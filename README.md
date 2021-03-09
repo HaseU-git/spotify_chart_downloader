@@ -9,13 +9,13 @@
 
 <hr>
 
-- spotify_chart_scraping.py
+- spotify_chart_scraping.py  
 `spotifycharts.com`からデータを取得しcsvに書き出すためのコードです。  
 
-- date.csv
+- date.csv  
 取得したい日にちをこのcsvファイルの中に書き込みます。  
 
-- datas
+- datas  
 このフォルダの中に書き出したcsvファイルが保存されます。  
 
 <hr>
