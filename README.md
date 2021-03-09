@@ -28,13 +28,13 @@ pip install Beatifulsoup4
 echo "2017-01-01,2018-01-01,2019-01-01,2020-01-01,2021-01-01" > date.csv
 ```
 
-日本以外の情報を取得したい場合には、`spootify_chart_downloader.py`のコードの`COUNTRY`の部分を自分が取得したい国に書き換えてください。  
+日本以外の情報を取得したい場合には、`spotify_chart_scraping.py`のコードの`COUNTRY`の部分を自分が取得したい国に書き換えてください。  
 
 最後にプログラムを実行します。  
 取得した情報は、日にちごとにcsvに出力され`datas`ディレクトリに保存されます。  
 
 ```shell
-python3 spotify_chart_downloader.py
+python3 spotify_chart_scraping.py
 ```
 
 ## 開発環境
