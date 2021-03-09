@@ -2,9 +2,9 @@ import time
 import requests
 from bs4 import BeautifulSoup
 import csv
-import pprint
 
-url = "https://spotifycharts.com/regional/jp/daily/"
+COUNTRY = "jp"
+URL = "https://spotifycharts.com/regional/" + COUNTRY + "/daily/"
 
 with open('date.csv', encoding = "utf-8-sig") as f:
     reader = csv.reader(f)
@@ -12,7 +12,7 @@ with open('date.csv', encoding = "utf-8-sig") as f:
     print(l)
 
 for a in l:
-	res = requests.get(url + a)
+	res = requests.get(URL + a)
 	soup = BeautifulSoup(res.text, 'html.parser')
 	artists = [i.get_text() for i in soup.select(".chart-table-track > span")]
 	titles = [i.get_text() for i in soup.select(".chart-table-track > strong")]
